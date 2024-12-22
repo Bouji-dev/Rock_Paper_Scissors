@@ -5,6 +5,7 @@ class RockPaperScissors:
         self.choices = ['rock', 'paper', 'scissors']
         self.player_name = name
 
+
     def get_player_choice(self):
         user_choice = input(f"Enter your choice {self.choices} :")
         if user_choice.lower() in self.choices:
