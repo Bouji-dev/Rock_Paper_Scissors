@@ -21,7 +21,7 @@ rock-paper-scissors/
 To run the project:
 
 ```python
-python src/game.py
+python src/main.py
 ```
 
 ## Hints
