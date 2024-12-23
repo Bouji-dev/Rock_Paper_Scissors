@@ -5,7 +5,6 @@ class RockPaperScissors:
         self.choices = ['rock', 'paper', 'scissors']
         self.player_name = name
 
-
     def get_player_choice(self):
         user_choice = input(f"Enter your choice {self.choices} :")
         if user_choice.lower() in self.choices:
@@ -15,9 +14,23 @@ class RockPaperScissors:
         return self.get_player_choice()
     
     def get_computer_choice(self):
+        """provide choice for machine
+
+        :return: random choice from choices
+        :rtype: str
+        """
         return random.choice(self.choices)
 
     def decide_winner(self, user_choice, computer_choice):
+        """ print winner 
+
+        :param user_choice: _description_
+        :type user_choice: _str_
+        :param computer_choice: _description_
+        :type computer_choice: _str_
+        :return: print the winner
+        :rtype: _str_
+        """
         if user_choice == computer_choice:
             return "It's a Tie!"
         win_combinations = [('rock, scissors'), ('paper', 'rock'), ('scissors', 'paper')]
